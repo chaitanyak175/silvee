@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Footer } from "./components/Footer";
+import { Nav } from "./components/Nav";
 import { SmoothScrollHero } from "./components/Hero";
 import { RevealLinks } from "./components/HeroText";
 import AuroraHero from "./components/AuroraHero";
@@ -10,10 +11,13 @@ import MaskText from "./components/MaskText";
 import WhyChooseUs from "./components/WhyChooseUs";
 import HeadingText from "./components/HeadingText";
 import FAQ from "./components/FAQ";
+import {Morque} from './components/Morque'
+
 
 export default function Home() {
     return (
         <div className="w-full h-full bg-black">
+            <Nav />
             <div className="pt-10">
                 <SmoothScrollHero />
             </div>
@@ -36,7 +40,7 @@ export default function Home() {
             <div className="mx-35">
                 <FAQ />
             </div>
-
+            <Morque/>
             <AuroraFooter />
 
             {/* <Footer /> */}
