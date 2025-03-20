@@ -40,10 +40,6 @@ export default function WhyChooseUs() {
     return (
         <div className={styles.textContainer}>
             <WhyChooseUsText />
-            <WhyChooseUsText />
-            <WhyChooseUsText />
-            <WhyChooseUsText />
-            <WhyChooseUsText />
         </div>
     );
 }
