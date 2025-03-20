@@ -11,8 +11,7 @@ import MaskText from "./components/MaskText";
 import WhyChooseUs from "./components/WhyChooseUs";
 import HeadingText from "./components/HeadingText";
 import FAQ from "./components/FAQ";
-import {Morque} from './components/Morque'
-
+import { Morque } from "./components/Morque";
 
 export default function Home() {
     return (
@@ -30,6 +29,7 @@ export default function Home() {
                 <Footer />
             </div> */}
 
+            <Morque />
             <div>
                 <HeadingText headingText="Gallery" />
                 <ProductGallery />
@@ -40,7 +40,7 @@ export default function Home() {
             <div className="mx-35">
                 <FAQ />
             </div>
-            <Morque/>
+
             <AuroraFooter />
 
             {/* <Footer /> */}

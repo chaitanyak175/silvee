@@ -75,7 +75,7 @@ const FAQ = () => {
         },
     ];
     return (
-        <div className="px-25 bg-custom-white rounded-4xl pb-2">
+        <div className="px-25 bg-custom-white rounded-4xl pb-6">
             <h1 className="text-[130px] font-reckless text-black">FAQs</h1>
             {faqData.map((item, i) => (
                 <Accordion

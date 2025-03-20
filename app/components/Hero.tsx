@@ -83,7 +83,7 @@ export const SmoothScrollHero = () => {
             >
                 <Nav />
                 <Hero />
-                <Schedule />
+                {/* <Schedule /> */}
             </ReactLenis>
         </div>
     );
