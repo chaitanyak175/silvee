@@ -1,0 +1,161 @@
+.container {
+    height: 300vh;
+    position: relative;
+    .sticky {
+        position: sticky;
+        overflow: hidden;
+        top: 0;
+        height: 100vh;
+        .el {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .imageContainer {
+                position: relative;
+                width: 25vw;
+                height: 25vh;
+                overflow: hidden; // Add this to clip the image animation
+                img {
+                    object-fit: cover;
+                }
+            }
+            &:nth-of-type(2) {
+                .imageContainer {
+                    top: -30vh;
+                    left: 5vw;
+                    width: 35vw;
+                    height: 30vh;
+                }
+            }
+            &:nth-of-type(3) {
+                .imageContainer {
+                    top: -15vh;
+                    left: -24vw;
+                    width: 20vw;
+                    height: 55vh;
+                }
+            }
+            &:nth-of-type(4) {
+                .imageContainer {
+                    left: 26.5vw;
+                    width: 25vw;
+                    height: 25vh;
+                }
+            }
+            &:nth-of-type(5) {
+                .imageContainer {
+                    top: 27.5vh;
+                    left: 4.5vw;
+                    width: 21vw;
+                    height: 25vh;
+                }
+            }
+            &:nth-of-type(6) {
+                .imageContainer {
+                    top: 30.5vh;
+                    left: -22.5vw;
+                    width: 30vw;
+                    height: 30vh;
+                }
+            }
+            &:nth-of-type(7) {
+                .imageContainer {
+                    top: 33vh;
+                    left: 26.5vw;
+                    width: 20vw;
+                    height: 35vh;
+                }
+            }
+        }
+    }
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+    gap: 20vw;
+    margin-bottom: 300px;
+}
+
+.textbody {
+    font-size: 5vw;
+}
+
+.lineMask {
+    overflow: hidden; /* This is critical - move from p to the container */
+
+    p {
+        margin: 0px;
+        font-weight: 400;
+        display: block; /* Ensure the paragraph takes up the full width */
+    }
+}
+
+@font-face {
+    font-family: "Reckless";
+    src: url("/fonts/RecklessTRIAL-RegularItalic.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Zighead";
+    src: url("/fonts/zighead.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: "Reckless", serif;
+    font-size: 10rem; /* Adjust as needed */
+    font-weight: 300; /* Instead of 100 */
+    font-style: italic; /* Ensure italic is applied */
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 20px;
+}
+
+.point {
+    font-family: "Reckless", sans-serif;
+    font-size: 2rem;
+    font-weight: 100; /* Instead of 200 */
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+.HeadingTextContainer {
+    display: flex;
+    // align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    margin-top: 300px;
+    margin-left: 300px;
+    gap: 1vw;
+    margin-bottom: 3px;
+}
+
+.HeadingTextbody {
+    font-size: 6vw;
+    font-family: "Reckless", serif;
+}
+
+.HeadingLineMask {
+    overflow: hidden; /* This is critical - move from p to the container */
+
+    p {
+        margin: 0px;
+        font-weight: 400;
+        display: block; /* Ensure the paragraph takes up the full width */
+    }
+}
