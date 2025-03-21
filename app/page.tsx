@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <div className="w-full h-full bg-black">
             <Nav />
-            <div className="pt-10">
+            <div id="Home" className="pt-10">
                 <SmoothScrollHero />
             </div>
 
@@ -28,8 +28,9 @@ export default function Home() {
             <div>
                 <Footer />
             </div> */}
-
-            <Morque />
+            <div id="Clients">
+                <Morque />
+            </div>
             <div>
                 <HeadingText headingText="Gallery" />
                 <ProductGallery />

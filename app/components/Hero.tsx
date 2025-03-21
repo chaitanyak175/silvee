@@ -9,8 +9,6 @@ import { FiArrowRight, FiMapPin } from "react-icons/fi";
 import { useRef } from "react";
 import Image from "next/image";
 
-const DURATION = 0.25;
-const STAGGER = 0.025;
 const ENTRANCE_STAGGER = 0.05; // Stagger effect for initial entrance
 
 const FlipLink = ({ children, href }: { children: string; href: string }) => {

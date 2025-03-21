@@ -1,5 +1,4 @@
 import { useMotionValueEvent, motion, useScroll } from "framer-motion";
-import Image from "next/image";
 import { useRef, useState } from "react";
 
 export const Nav = () => {
@@ -28,31 +27,31 @@ export const Nav = () => {
         >
             <nav className="w-[30%] flex justify-center gap-5 rounded-3xl bg-custom-white p-3 *:rounded-xl *:border text-black ${playfair.className}">
                 <a
-                    href="#"
+                    href="#Home"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"
                 >
                     Home
                 </a>
                 <a
-                    href="#"
+                    href="#Clients"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"
                 >
                     Products
                 </a>
                 <a
-                    href="#"
+                    href="#Services"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"
                 >
                     Services
                 </a>
                 <a
-                    href="#"
+                    href="#About"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"
                 >
                     About
                 </a>
                 <a
-                    href="#"
+                    href="#Cart"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"
                 >
                     Cart

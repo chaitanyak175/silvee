@@ -4,8 +4,6 @@ import {
     useMotionTemplate,
     useMotionValue,
     animate,
-    useSpring,
-    useTransform,
 } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -22,7 +20,7 @@ const AuroraFooter = () => {
             repeat: Infinity,
             repeatType: "mirror",
         });
-    }, []);
+    }, [color]);
     return (
         <motion.section
             style={{
@@ -85,12 +83,6 @@ const Link = ({ heading, imgSrc, subheading, href }: LinkProps) => {
 
     const x = useMotionValue(0);
     const y = useMotionValue(0);
-
-    const mouseXSpring = useSpring(x);
-    const mouseYSpring = useSpring(y);
-
-    const top = useTransform(mouseYSpring, [0.5, -0.5], ["40%", "60%"]);
-    const left = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
 
     const handleMouseMove = (
         e: React.MouseEvent<HTMLAnchorElement, MouseEvent>

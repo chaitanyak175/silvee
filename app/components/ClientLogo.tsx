@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 function ClientLogo({ client }: any) {
     return (

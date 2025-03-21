@@ -1,7 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
 interface AccordionProps {
     i: number;
