@@ -64,14 +64,37 @@ const FAQ = () => {
     const [expanded, setExpanded] = useState<number | false>(false);
     const faqData = [
         {
-            title: "Is Deadpool awesome?",
-            description: "Absolutely! He's the merc with a mouth!",
+            title: "What is Silvee 925 Sterling Silver?",
+            description:
+                "Silvee is a premium B2B wholesale brand specializing in high-quality 925 sterling silver jewellery and corporate gifting solutions.",
         },
         {
-            title: "Can Spider-Man really stick to walls?",
-            description: "You bet! It's his super sticky superpower!",
+            title: "What products do you offer?",
+            description:
+                "We manufacture and supply jewellery like rings, pendants, bracelets, earrings, and kada, as well as corporate gifts such as silver coins, trophies, and plaques.",
+        },
+        {
+            title: "How can I place a bulk order?",
+            description:
+                "Contact us via Email: silvee925@gmail.com, Phone: +91 7020475443.",
+        },
+        {
+            title: "Do you offer customized jewellery and gifts?",
+            description:
+                "Yes! We provide logo engraving, name engraving, and custom silver designs.",
+        },
+        {
+            title: "How long does delivery take?",
+            description:
+                "7-15 days for standard orders, 20-30 days for customized orders.",
+        },
+        {
+            title: "Is your silver jewellery hallmarked?",
+            description:
+                "Yes, all our products are 100% certified 925 sterling silver with hallmarking.",
         },
     ];
+
     return (
         <div className="px-25 bg-custom-white rounded-4xl pb-6">
             <h1 className="text-[130px] font-reckless text-black">FAQs</h1>

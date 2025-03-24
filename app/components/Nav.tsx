@@ -36,13 +36,13 @@ export const Nav = () => {
                     href="#Clients"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"
                 >
-                    Products
+                    Clients
                 </a>
                 <a
-                    href="#Services"
+                    href="#Gallery"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"
                 >
-                    Services
+                    Gallery
                 </a>
                 <a
                     href="#About"

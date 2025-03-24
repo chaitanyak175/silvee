@@ -301,3 +301,17 @@ const ScheduleItem = ({
         </motion.div>
     );
 };
+
+
+
+const faqData = [
+        {
+            title: "Is Deadpool awesome?",
+            description: "Absolutely! He's the merc with a mouth!",
+        },
+        {
+            title: "Can Spider-Man really stick to walls?",
+            description: "You bet! It's his super sticky superpower!",
+        },
+];
+add them here in this array

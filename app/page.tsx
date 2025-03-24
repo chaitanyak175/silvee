@@ -31,7 +31,7 @@ export default function Home() {
             <div id="Clients">
                 <Morque />
             </div>
-            <div>
+            <div id="Gallery">
                 <HeadingText headingText="Gallery" />
                 <ProductGallery />
             </div>
