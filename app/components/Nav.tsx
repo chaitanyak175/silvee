@@ -25,7 +25,7 @@ export const Nav = () => {
             }}
             className="fixed top-0 pt-3 z-100 flex w-full justify-center"
         >
-            <nav className="w-[30%] flex justify-center gap-5 rounded-3xl bg-custom-white p-3 *:rounded-xl *:border text-black ${playfair.className}">
+            <nav className="w-[50%] flex justify-center gap-5 rounded-3xl bg-custom-white p-3 *:rounded-xl *:border text-black ${playfair.className}">
                 <a
                     href="#Home"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"

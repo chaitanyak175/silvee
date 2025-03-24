@@ -12,11 +12,36 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import HeadingText from "./components/HeadingText";
 import FAQ from "./components/FAQ";
 import { Morque } from "./components/Morque";
+import { useEffect, useState } from "react";
+import HeaderMenu from "./components/HeaderMenu";
 
 export default function Home() {
+
+    const [width, setWidth] = useState(0);
+
+    useEffect(() => {
+        // Set the initial width after component mounts (client-side only)
+        setWidth(window.innerWidth);
+
+        // Create handler function
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+
+        // Add event listener
+        window.addEventListener("resize", handleResize);
+
+        // Clean up event listener on component unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []); // Empty dependency array ensures this runs once on mount
+
+
+
     return (
         <div className="w-full h-full bg-black">
-            <Nav />
+            {width<1125?<HeaderMenu/>:<Nav/>}
             <div id="Home" className="pt-10">
                 <SmoothScrollHero />
             </div>
