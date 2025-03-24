@@ -28,8 +28,10 @@ const Accordion: React.FC<AccordionProps> = ({
                 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-                <div className="p-6 items-center rounded-3xl bg-custom-white border-1 border-black shadow-2xl">
-                    <h3 className="text-3xl text-black">{title}</h3>
+                <div className="p-4 sm:p-6 md:p-8 flex items-center rounded-xl bg-custom-white border border-black shadow-xl">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl text-black">
+                        {title}
+                    </h3>
                 </div>
             </motion.div>
 
@@ -48,8 +50,8 @@ const Accordion: React.FC<AccordionProps> = ({
                             ease: [0.25, 1, 0.5, 1],
                         }}
                     >
-                        <div className="p-6 flex items-center rounded-3xl">
-                            <p className="text-2xl text-black font-reckless">
+                        <div className="p-4 sm:p-6 md:p-8 flex items-center">
+                            <p className="text-lg sm:text-xl md:text-2xl text-black font-reckless">
                                 {description}
                             </p>
                         </div>
@@ -96,8 +98,10 @@ const FAQ = () => {
     ];
 
     return (
-        <div className="px-25 bg-custom-white rounded-4xl pb-6">
-            <h1 className="text-[130px] font-reckless text-black">FAQs</h1>
+        <div className="w-[90%] px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 bg-custom-white rounded-3xl pb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-reckless text-black mb-8 mt-3">
+                FAQs
+            </h1>
             {faqData.map((item, i) => (
                 <Accordion
                     key={i}
@@ -111,4 +115,5 @@ const FAQ = () => {
         </div>
     );
 };
+
 export default FAQ;
