@@ -79,7 +79,7 @@ export const SmoothScrollHero = () => {
                     // smoothTouch: false, // Disable smooth scrolling on touch devices for better performance
                 }}
             >
-                <Nav />
+                {/* <Nav /> */}
                 <Hero />
                 {/* <Schedule /> */}
             </ReactLenis>
