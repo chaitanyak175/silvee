@@ -63,7 +63,7 @@ export default function Home() {
 
             <WhyChooseUs />
 
-            <div className="mx-35">
+            <div className="w-[100%] mx-1 md:mx-4 flex justify-center items-center">
                 <FAQ />
             </div>
 
