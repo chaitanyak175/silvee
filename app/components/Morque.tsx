@@ -14,11 +14,11 @@ export const Morque = () => {
     ];
 
     return (
-        <div className="bg-custom-white my-10 md:my-20 rounded-2xl mx-4 sm:mx-10 md:mx-20 lg:mx-35 p-4 pb-10">
+        <div className="bg-custom-white my-[10px] md:my-20 rounded-2xl mx-4 sm:mx-10 md:mx-20 lg:mx-35 p-4 pb-10">
             <h2 className="text-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-reckless mx-3 my-4 text-center">
                 OUR CLIENTS
             </h2>
-            <Marquee className="w-full">
+            <Marquee className="w-full" speed={200}>
                 {client.map((clt, index) => (
                     <ClientLogo key={index} client={clt} />
                 ))}

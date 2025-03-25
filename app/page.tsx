@@ -16,60 +16,40 @@ import { useEffect, useState } from "react";
 import HeaderMenu from "./components/HeaderMenu";
 
 export default function Home() {
-
     const [width, setWidth] = useState(0);
 
     useEffect(() => {
-        // Set the initial width after component mounts (client-side only)
         setWidth(window.innerWidth);
-
-        // Create handler function
-        const handleResize = () => {
-            setWidth(window.innerWidth);
-        };
-
-        // Add event listener
+        const handleResize = () => setWidth(window.innerWidth);
         window.addEventListener("resize", handleResize);
-
-        // Clean up event listener on component unmount
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []); // Empty dependency array ensures this runs once on mount
-
-
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return (
         <div className="w-full h-full bg-black">
-            {width<1125?<HeaderMenu/>:<Nav/>}
-            <div id="Home" className="pt-10">
+            {width < 1125 ? <HeaderMenu /> : <Nav />}
+            
+            {/* Sections with matching IDs */}
+            <section id="Home" className="pt-10">
                 <SmoothScrollHero />
-            </div>
+            </section>
 
-            {/* <div>
-                <RevealLinks />
-            </div>
-
-            <div>
-                <Footer />
-            </div> */}
-            <div id="Clients">
+            <section id="Clients">
                 <Morque />
-            </div>
-            <div id="Gallery">
+            </section>
+
+            <section id="Gallery">
                 <HeadingText headingText="Gallery" />
                 <ProductGallery />
-            </div>
+            </section>
 
             <WhyChooseUs />
 
-            <div className="w-[100%] mx-1 md:mx-4 flex justify-center items-center">
+            <section className="w-[100%] mx-1 md:mx-4 flex justify-center items-center">
                 <FAQ />
-            </div>
+            </section>
 
             <AuroraFooter />
-
-            {/* <Footer /> */}
         </div>
     );
 }
