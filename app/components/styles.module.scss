@@ -133,6 +133,7 @@
     padding-right: 20px;
     padding-bottom: 30px;
     margin-top: 10px;
+    color: white;
 }
 
 .HeadingTextContainer {
@@ -213,23 +214,20 @@
     }
     .HeadingTextContainer {
         margin-left: 100px;
-
     }
 }
 @media (min-width: 992px) {
     .textContainer {
-      padding: 2rem;
+        padding: 2rem;
     }
     .title {
-      font-size: 3rem;
-      padding-bottom: 4rem;
-      
+        font-size: 3rem;
+        padding-bottom: 4rem;
     }
     .point {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
     .HeadingTextContainer {
         margin-left: 300px;
     }
-    
-  }
+}
