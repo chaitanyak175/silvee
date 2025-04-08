@@ -31,34 +31,34 @@ const AuroraFooter = () => {
             <section className="w-full max-w-8xl bg-transparent p-4 md:p-8">
                 <div className="mx-auto w-400">
                     <Link
-                        heading="About"
+                        heading="Home"
                         subheading="Learn what we do here"
                         imgSrc="/imgs/random/11.jpg"
-                        href="#"
+                        href="#Home"
                     />
                     <Link
                         heading="Clients"
                         subheading="We work with great people"
                         imgSrc="/imgs/random/6.jpg"
-                        href="#"
+                        href="#Clients"
                     />
                     <Link
-                        heading="Portfolio"
+                        heading="Gallery"
                         subheading="Our work speaks for itself"
                         imgSrc="/imgs/random/4.jpg"
-                        href="#"
+                        href="#Gallery"
                     />
                     <Link
-                        heading="Careers"
+                        heading="About"
                         subheading="We want cool people"
                         imgSrc="/imgs/random/5.jpg"
-                        href="#"
+                        href="#About"
                     />
                     <Link
-                        heading="Fun"
-                        subheading="Incase you're bored"
+                        heading="FAQ"
+                        subheading="If any doubts"
                         imgSrc="/imgs/random/10.jpg"
-                        href="#"
+                        href="#FAQ"
                     />
                 </div>
             </section>

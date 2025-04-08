@@ -28,7 +28,7 @@ export default function Home() {
     return (
         <div className="w-full h-full bg-black">
             {width < 1125 ? <HeaderMenu /> : <Nav />}
-            
+
             {/* Sections with matching IDs */}
             <section id="Home" className="pt-10">
                 <SmoothScrollHero />
@@ -43,9 +43,11 @@ export default function Home() {
                 <ProductGallery />
             </section>
 
-            <WhyChooseUs />
+            <section id="About">
+                <WhyChooseUs />
+            </section>
 
-            <section className="w-[100%] mx-1 md:mx-4 flex justify-center items-center">
+            <section id="FAQ" className="w-[100%] mx-1 md:mx-4 flex justify-center items-center">
                 <FAQ />
             </section>
 

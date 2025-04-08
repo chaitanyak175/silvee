@@ -51,10 +51,10 @@ export const Nav = () => {
                     About
                 </a>
                 <a
-                    href="#Cart"
+                    href="#FAQ"
                     className="p-1 min-w-1/6 flex items-center justify-center hover:bg-black hover:text-white duration-100"
                 >
-                    Cart
+                    FAQ
                 </a>
             </nav>
         </motion.div>
